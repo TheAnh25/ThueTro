@@ -1,0 +1,28 @@
+.ContainerProductTest {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  gap: 25px;
+  margin: auto;
+}
+
+.Product__Image {
+  width: 30%;
+  margin: auto 0;
+}
+
+.ProductInfo {
+}
+
+.ProductTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ProductTitle__Content {
+  text-align: center;
+}
+
+.ProductTitle__price {
+  color: rgb(255, 85, 0);
+}
