@@ -1,0 +1,49 @@
+.Container__NotFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  background-color: rgb(255, 255, 255);
+}
+/* flex flex-col items-center pt-10 bg-white */
+
+.NotFound {
+  cursor: pointer;
+  max-width: 896px;
+}
+
+.NotFound__text {
+  color: rgb(220 38 38);
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  font-size: 112px;
+}
+
+.NotFound__find {
+  color: rgb(156 163 175);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+}
+
+.NotFound__search {
+  color: rgb(156 163 175);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+}
+
+.NotFound__home {
+  color: rgb(37 99 235);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.NotFound__img {
+  max-width: 56rem;
+  cursor: pointer;
+  object-fit: contain;
+}

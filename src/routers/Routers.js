@@ -6,6 +6,7 @@ import Homes from '../pages/Homes'
 import Feed from '../Products/Feed'
 import Contact from '../pages/Contact'
 import ProductItemTest from '../Products/ProductItemTest'
+import Error404 from '../pages/Error404'
 
 const Routers = () => {
   return (
@@ -16,6 +17,7 @@ const Routers = () => {
       <Route path="/SignUp" element={<SignUp />} />
       <Route path="/Contact" element={<Contact />} />
       <Route path="/ProductItemTest" element={<ProductItemTest />} />
+      <Route path="*" element={<Error404 />} />
     </Routes>
   )
 }

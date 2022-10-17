@@ -1,205 +1,28 @@
-.Contact {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #112d42;
-}
-.Contact::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background: #03a9f4;
-}
-.Contact .container__Contact {
-  position: relative;
-  min-width: 1100px;
-  min-height: 550px;
-  display: flex;
-  z-index: 0;
-  margin-left: -350px;
-  margin-top: -100px;
-}
-
-.Contact .container__Contact .container__Contact--info {
-  position: absolute;
-  top: 40px;
-  width: 350px;
-  height: calc(100% - 80px);
-  background: #0f3959;
-  z-index: 1;
-  padding: 40px;
+.container__Contact {
+  width: 1200px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  margin: auto;
 }
-.Contact .container__Contact .container__Contact--info h2 {
-  color: #fff;
-  font-size: 24px;
-  margin: 20px 0;
+
+.container__Contact--info {
 }
-.Contact .container__Contact .container__Contact--info .li__Contact {
-  position: relative;
+
+.info {
+  list-style: none;
+}
+
+/* The Ul */
+.sci {
   list-style: none;
   display: flex;
-  margin: 20px 0;
-  cursor: pointer;
-  align-items: flex-start;
-}
-.Contact .container__Contact .container__Contact--info .li__Contact span {
-  color: #fff;
-  margin-left: 10px;
-  font-weight: 300;
-  opacity: 0.5;
-  font-size: 20px;
-}
-/*Hiệu Ứng Hover Cho Thẻ Li*/
-.Contact .container__Contact .container__Contact--info .li__Contact:hover span {
-  opacity: 1;
+  gap: 10px;
 }
 
-.Contact .container__Contact .container__Contact--info .sci {
-  position: relative;
+.li__Contact {
   display: flex;
-}
-.Contact .container__Contact .container__Contact--info .sci .li__Contact {
-  list-style: none;
-  margin-right: 15px;
-}
-.Contact .container__Contact .container__Contact--info .sci .li__Contact a {
-  text-decoration: none;
-  opacity: 0.5;
-  color: #fff;
-  font-size: 32px;
-}
-/*Hiệu Ứng Hover Icon*/
-.Contact
-  .container__Contact
-  .container__Contact--info
-  .sci
-  .li__Contact:hover
-  a {
-  opacity: 1;
-}
-
-/* Input Form */
-.Contact .container__Contact .containerForm {
-  position: absolute;
-  padding: 70px 50px;
-  background: #fff;
-  margin-left: 150px;
-  padding-left: 310px;
-  width: calc(100% - 150px);
-  height: 100%;
-  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
-}
-.Contact .container__Contact .containerForm h2 {
-  color: #0f3959;
-  font-size: 24px;
-  font-weight: 500;
-}
-.Contact .container__Contact .containerForm .formBox {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-top: 30px;
-}
-.Contact .container__Contact .containerForm .formBox .inputBox {
-  position: relative;
-  margin: 0 0 35px 0;
-}
-.Contact .container__Contact .containerForm .formBox .inputBox.w50 {
-  width: 47%;
-}
-.Contact .container__Contact .containerForm .formBox .inputBox.w100 {
-  width: 100%;
-}
-
-.Contact .container__Contact .containerForm .formBox .inputBox input,
-.Contact .container__Contact .containerForm .formBox .inputBox textarea {
-  width: 100%;
-  padding: 5px 0;
-  resize: none;
-  font-size: 18px;
-  font-weight: 400;
-  color: #333;
-  border: none;
-  border-bottom: 1px solid #777;
-  outline: none;
-}
-.Contact .container__Contact .containerForm .formBox .inputBox textarea {
-  min-height: 120px;
-}
-.Contact
-  .container__Contact
-  .containerForm
-  .formBox
-  .inputBox
-  input[type='submit'] {
-  position: relative;
-  cursor: pointer;
-  background: #0f3959;
-  color: #fff;
-  border: none;
-  max-width: 150px;
-  padding: 12px;
-}
-.Contact
-  .container__Contact
-  .containerForm
-  .formBox
-  .inputBox
-  input[type='submit']:hover {
-  background: #ff568c;
-}
-
-.Contact .container .containerForm .formBox .inputBox span {
-  position: absolute;
-  left: 0;
-  padding: 5px 0;
-  font-size: 18px;
-  font-weight: 400;
-  color: #333;
-  transition: 0.5s;
-  pointer-events: none;
-}
-.Contact
-  .container__Contact
-  .containerForm
-  .formBox
-  .inputBox
-  input:focus
-  ~ span,
-.Contact
-  .container__Contact
-  .containerForm
-  .formBox
-  .inputBox
-  textarea:focus
-  ~ span,
-.Contact
-  .container__Contact
-  .containerForm
-  .formBox
-  .inputBox
-  input:valid
-  ~ span,
-.Contact
-  .container__Contact
-  .containerForm
-  .formBox
-  .inputBox
-  textarea:valid
-  ~ span {
-  transform: translateY(-20px);
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  color: #ff568c;
+  align-items: center;
+  gap: 10px;
 }

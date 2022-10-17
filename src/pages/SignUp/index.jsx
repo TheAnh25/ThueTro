@@ -3,6 +3,7 @@ import { useFormik } from 'formik'
 import * as Yup from 'yup'
 import '../SignUp/SignUp.css'
 import { Link } from 'react-router-dom'
+import Helmet from '../../components/Helmet/Helmet'
 
 const SignUp = () => {
   const formik = useFormik({
@@ -47,89 +48,91 @@ const SignUp = () => {
   })
 
   return (
-    <div className="SignUp">
-      <div className="SignUp__name">Sign up</div>
-      <div className="SignUp__Form">
-        <form className="infoform" onSubmit={formik.handleSubmit}>
-          <label>Your name</label>
-          <input
-            className="input__SignUp"
-            type="text"
-            id="name"
-            name="name"
-            value={formik.values.name}
-            onChange={formik.handleChange}
-            placeholder="Enter your name"
-          />
-          {formik.errors.name && (
-            <p className="errorMsg">{formik.errors.name}</p>
-          )}
-          <label>Email address</label>
-          <input
-            className="input__SignUp"
-            type="email"
-            id="email"
-            name="email"
-            value={formik.values.email}
-            onChange={formik.handleChange}
-            placeholder="Enter your email"
-          />
-          {formik.errors.email && (
-            <p className="errorMsg">{formik.errors.email}</p>
-          )}
-          <label>Password</label>
-          <input
-            className="input__SignUp"
-            type="password"
-            id="password"
-            name="password"
-            value={formik.values.password}
-            onChange={formik.handleChange}
-            placeholder="Enter your password"
-          />
-          {formik.errors.password && (
-            <p className="errorMsg">{formik.errors.password}</p>
-          )}
-          <label>Confirm Password</label>
-          <input
-            className="input__SignUp"
-            type="password"
-            id="confirmedPassword"
-            name="confirmedPassword"
-            value={formik.values.confirmedPassword}
-            onChange={formik.handleChange}
-            placeholder="Confirm your password"
-          />
-          {formik.errors.confirmedPassword && (
-            <p className="errorMsg">{formik.errors.confirmedPassword}</p>
-          )}
-          <label>Phone number</label>
-          <input
-            className="input__SignUp"
-            type="text"
-            id="phone"
-            name="phone"
-            value={formik.values.phone}
-            onChange={formik.handleChange}
-            placeholder="Enter your phone number"
-          />
-          {formik.errors.phone && (
-            <p className="errorMsg">{formik.errors.phone}</p>
-          )}
-          <div className="btn-singup">
-            <button className="btn__SignUp" type="submit">
-              Đăng ký
-            </button>
-          </div>
-          <hr width="70%" size="5px" align="center" color="gray"></hr>
-          <div className="back__SignIn">
-            <button className="btnBack__SignIn">
-              <Link to="/SignIn">Đăng nhập ngay</Link>
-            </button>
-          </div>
-        </form>
+    <Helmet title="Register">
+      <div className="SignUp">
+        <div className="SignUp__name">Sign up</div>
+        <div className="SignUp__Form">
+          <form className="infoform" onSubmit={formik.handleSubmit}>
+            <label>Your name</label>
+            <input
+              className="input__SignUp"
+              type="text"
+              id="name"
+              name="name"
+              value={formik.values.name}
+              onChange={formik.handleChange}
+              placeholder="Enter your name"
+            />
+            {formik.errors.name && (
+              <p className="errorMsg">{formik.errors.name}</p>
+            )}
+            <label>Email address</label>
+            <input
+              className="input__SignUp"
+              type="email"
+              id="email"
+              name="email"
+              value={formik.values.email}
+              onChange={formik.handleChange}
+              placeholder="Enter your email"
+            />
+            {formik.errors.email && (
+              <p className="errorMsg">{formik.errors.email}</p>
+            )}
+            <label>Password</label>
+            <input
+              className="input__SignUp"
+              type="password"
+              id="password"
+              name="password"
+              value={formik.values.password}
+              onChange={formik.handleChange}
+              placeholder="Enter your password"
+            />
+            {formik.errors.password && (
+              <p className="errorMsg">{formik.errors.password}</p>
+            )}
+            <label>Confirm Password</label>
+            <input
+              className="input__SignUp"
+              type="password"
+              id="confirmedPassword"
+              name="confirmedPassword"
+              value={formik.values.confirmedPassword}
+              onChange={formik.handleChange}
+              placeholder="Confirm your password"
+            />
+            {formik.errors.confirmedPassword && (
+              <p className="errorMsg">{formik.errors.confirmedPassword}</p>
+            )}
+            <label>Phone number</label>
+            <input
+              className="input__SignUp"
+              type="text"
+              id="phone"
+              name="phone"
+              value={formik.values.phone}
+              onChange={formik.handleChange}
+              placeholder="Enter your phone number"
+            />
+            {formik.errors.phone && (
+              <p className="errorMsg">{formik.errors.phone}</p>
+            )}
+            <div className="btn-singup">
+              <button className="btn__SignUp" type="submit">
+                Đăng ký
+              </button>
+            </div>
+            <hr width="70%" size="5px" align="center" color="gray"></hr>
+            <div className="back__SignIn">
+              <button className="btnBack__SignIn">
+                <Link to="/SignIn">Đăng nhập ngay</Link>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
+    </Helmet>
   )
 }
 

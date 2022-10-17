@@ -1,17 +1,18 @@
 import React from 'react'
-import ProductItem from '../ProductItem'
+
 import '../Feed/Feed.css'
+import ProductItemTest from '../ProductItemTest'
 
 const Feed = () => {
   return (
     <div className="Feed">
-      <ProductItem />
-      <ProductItem />
-      <ProductItem />
-      <ProductItem />
-      <ProductItem />
-      <ProductItem />
-      <ProductItem />
+      <ProductItemTest />
+      <ProductItemTest />
+      <ProductItemTest />
+      <ProductItemTest />
+      <ProductItemTest />
+      <ProductItemTest />
+      <ProductItemTest />
     </div>
   )
 }

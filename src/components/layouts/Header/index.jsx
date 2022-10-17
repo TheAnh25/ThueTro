@@ -1,24 +1,31 @@
 import React from 'react'
 import '../Header/Header.css'
 import logo from '../../../assets/images/logo-user.jpg'
+import FiltersForm from '../../FiltersForm'
 
 const Header = () => {
+  const handleFiltersChange = (newFilters) => {
+    console.log('New Filters: ', newFilters)
+  }
+
   return (
     <div className="header">
       <div className="container">
         <div className="header__logo">
-          <a href="">
+          <a href="/">
             <h1>NHATROSV</h1>
           </a>
         </div>
         <div className="header__search">
           <form className="header__search__form">
-            <div className="header__search__form--content">
+            {/* <div className="header__search__form--content">
               <input
+                id="textSearch"
                 type="text"
                 placeholder="Nhập khu vực, địa điểm cho dự án bạn muốn thuê"
               />
-            </div>
+            </div> */}
+            <FiltersForm onSubmit={handleFiltersChange} />
             <button type="submit" className="header__search__btn">
               <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
               <p>Tìm kiếm</p>
@@ -28,7 +35,7 @@ const Header = () => {
         <div className="header__avatar">
           <ul className="header__avatar--list">
             <li className="header__avatar__user">
-              <a href="">
+              <a href="/">
                 <span>
                   <img className="image__user" src={logo} alt="" />
                 </span>
@@ -37,7 +44,7 @@ const Header = () => {
               <div className="header__info__menu">
                 <ul className="header__info__menu--list">
                   <li className="header__info__menu--user">
-                    <a href="">
+                    <a href="/">
                       <span>
                         <img className="image__user" src={logo} alt="" />
                       </span>
@@ -77,7 +84,7 @@ const Header = () => {
               </span>
             </li>
             <li className="header__avatar__post">
-              <a href="">
+              <a href="/">
                 <i class="fa-solid fa-plus"></i>
                 <p>Đăng tin</p>
               </a>

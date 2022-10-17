@@ -19,7 +19,7 @@ const Navbar = () => {
           <Link to="/">Ở ghép</Link>
         </li>
         <li>
-          <Link to="/ProductItemTest">Nhà mặt phố</Link>
+          <Link to="/">Nhà mặt phố</Link>
         </li>
         <li>
           <Link to="/Contact">Liên hệ</Link>
